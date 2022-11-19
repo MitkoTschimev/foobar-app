@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter - iOS Simulator - iPhone SE - Dev (elenas macbook)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "deviceId": "C50F4362-61FA-4E5D-823E-0FC8659396C3",
+      "flutterMode": "debug",
+      "cwd": "${workspaceFolder}/apps/foobar-app"
+    }
+  ]
+}
