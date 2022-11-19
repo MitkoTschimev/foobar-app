@@ -1,3 +1,4 @@
+import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 
@@ -41,13 +42,23 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Foobar Agency'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+          appBar: AppBar(
+            title: const Text('Foobar Agency'),
+          ),
+          body: const Center(
+            child: Text('Hello World'),
+          ),
+          bottomNavigationBar: ConvexAppBar(
+            backgroundColor: Colors.black,
+            items: [
+              TabItem(icon: Icons.home, title: 'Home'),
+              TabItem(icon: Icons.map, title: 'Discovery'),
+              TabItem(icon: Icons.add, title: 'Add'),
+              TabItem(icon: Icons.message, title: 'Message'),
+              TabItem(icon: Icons.people, title: 'Profile'),
+            ],
+            onTap: (int i) => print('click index=$i'),
+          )),
     );
   }
 }
